@@ -1,0 +1,36 @@
+using System;
+ 
+namespace OOP2
+{
+    class Student
+    {
+        // Data Members
+        public int id;
+        public string name;
+ 
+        // Method
+        public void Display()
+        {
+            Console.WriteLine("ID: " + id);
+            Console.WriteLine("Name: " + name);
+        }
+    }
+ 
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Student s = new Student();
+ 
+            // Take Input
+            Console.Write("Enter ID: ");
+            s.id = int.Parse(Console.ReadLine());
+ 
+            Console.Write("Enter Name: ");
+            s.name = Console.ReadLine();
+ 
+            // Display Output
+            s.Display();
+ 
+            Console.ReadKey();
+        }
