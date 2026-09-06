@@ -1,0 +1,40 @@
+using System;
+ 
+class Person
+{
+    public string Name;
+    public int Age;
+ 
+    public Person(string name, int age)
+    {
+        Name = name;
+        Age = age;
+        Console.WriteLine("Person Constructor Called");
+    }
+}
+ 
+class Student : Person
+{
+    public int StudentID;
+ 
+    public Student(string name, int age, int studentID) : base(name, age)
+    {
+        StudentID = studentID;
+        Console.WriteLine("Student Constructor Called");
+    }
+ 
+    public void Display()
+    {
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Age: " + Age);
+        Console.WriteLine("Student ID: " + StudentID);
+    }
+}
+ 
+class Program
+{
+    static void Main()
+    {
+        Student s = new Student("Rahim", 21, 1001);
+        s.Display();
+    }
