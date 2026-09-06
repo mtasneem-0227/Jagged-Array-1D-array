@@ -1,5 +1,5 @@
-# Jagged-Array-1D-array
-Lab task 2
+# Inheritance
+
 using System;
 
 class Employee
