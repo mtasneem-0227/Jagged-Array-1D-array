@@ -1,0 +1,28 @@
+using System;
+ 
+namespace OOP2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Variable Declaration
+            int i, j, n;
+ 
+            // Take Input
+            Console.Write("Enter value: ");
+            n = int.Parse(Console.ReadLine());
+ 
+            // Processing / Logic
+            for (i = 0; i < n; i++)
+            {
+ 
+            }
+ 
+            // Display Output
+            Console.WriteLine("Result");
+ 
+            Console.ReadKey();
+        }
+    }
+}
